@@ -8,17 +8,20 @@ import LandingPage from './Pages/LandingPage';
 import TechPlayground from './Pages/TechPlayground';
 import ArtGallery from './Pages/ArtGallery';
 import About from './Pages/About';
-
+import Nav from './Components/Nav'
 
 class App extends Component {
   render() {
     return (
-      <Switch>
-        <Route strict exact path='/' component={LandingPage} />
-        <Route path='/tech_playground' component={TechPlayground} />
-        <Route path='/art_gallery' component={ArtGallery} />
-        <Route path='/about' component={About} />
-      </Switch>
+      <div>
+        <Nav/>
+        <Switch>
+          <Route strict exact path='/' component={LandingPage} />
+          <Route path='/tech_playground' component={TechPlayground} />
+          <Route path='/art_gallery' component={ArtGallery} />
+          <Route path='/about' component={About} />
+        </Switch>
+      </div>
     );
   }
 }

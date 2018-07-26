@@ -1,0 +1,17 @@
+.btn {
+  color: white;
+  background-color: blue;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font: 1.8em 700;
+  padding: 10px 15px;
+}
+
+.primary {
+  color: red;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font: 1.8em 700;
+  padding: 10px 15px;
+}
