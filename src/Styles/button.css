@@ -1,17 +1,66 @@
 .btn {
-  color: white;
-  background-color: blue;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  font: 1.8em 700;
-  padding: 10px 15px;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.8em;
+  font-weight: 600;
+  padding: 10px 30px;
 }
 
-.primary {
-  color: red;
-  background-color: white;
+.btn.primary {
+  color: white;
+  background-color: #941588;
+}
+
+.btn.primary_gradient {
+  position: relative;
+  color: #fff;
+  background-image: -webkit-gradient(-30deg, 0 0, 0 100%, from(#f51580), to(#151a94));
+  background-image: -webkit-linear-gradient(-30deg, #f51580, #151a94);
+  background-image: linear-gradient(-30deg, #f51580, #151a94);
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-size: 200% 90px;
+  background-position: -40px -30px;
+  -webkit-transition: all 0.4s linear;
+          transition: all 0.4s linear;
+}
+
+.btn.primary_gradient:hover {
+  background-position: 0 0;
+}
+
+.btn.warning {
+  color: black;
+  background-color: #e3e25d;
+}
+
+.btn.danger {
+  color: white;
+  background-color: #901b3b;
+}
+
+.btn.success {
+  color: white;
+  background-color: #d97c01;
+}
+
+.btn.small {
+  border: 1px solid #ddd;
+  font-size: .8em;
+  font-weight: 250;
+  padding: 4px 10px;
+}
+
+.btn.medium {
   border: 2px solid #ddd;
-  border-radius: 5px;
-  font: 1.8em 700;
-  padding: 10px 15px;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 6px 20px;
+}
+
+.btn.large {
+  border: 3px solid #ddd;
+  font-size: 1.8em;
+  font-weight: 600;
+  padding: 10px 30px;
 }

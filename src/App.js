@@ -8,7 +8,9 @@ import LandingPage from './Pages/LandingPage';
 import TechPlayground from './Pages/TechPlayground';
 import ArtGallery from './Pages/ArtGallery';
 import About from './Pages/About';
-import Nav from './Components/Nav'
+import Contact from './Pages/Contact';
+
+import Nav from './Components/Nav';
 
 class App extends Component {
   render() {
@@ -17,9 +19,10 @@ class App extends Component {
         <Nav/>
         <Switch>
           <Route strict exact path='/' component={LandingPage} />
-          <Route path='/tech_playground' component={TechPlayground} />
-          <Route path='/art_gallery' component={ArtGallery} />
+          <Route path='/playground' component={TechPlayground} />
+          <Route path='/gallery' component={ArtGallery} />
           <Route path='/about' component={About} />
+          <Route path='/contact' component={Contact} />
         </Switch>
       </div>
     );

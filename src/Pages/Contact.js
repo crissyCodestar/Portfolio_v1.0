@@ -3,9 +3,7 @@ import {
   Link
 } from 'react-router';
 
-import Jumbotron from '../Components/Landing/Jumbotron';
-
-class LandingPage extends Component {
+class Contact extends Component {
   constructor(){
     super();
     this.state={
@@ -16,10 +14,10 @@ class LandingPage extends Component {
   render(){
     return(
       <div>
-        <Jumbotron />
+        <h1>Contact Me</h1>
       </div>
     )
   }
 }
 
-export default LandingPage;
+export default Contact;
