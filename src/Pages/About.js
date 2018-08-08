@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router';
+import SocialLinks from '../Components/SocialLinks'
 
 class About extends Component {
   constructor(){
@@ -15,6 +16,7 @@ class About extends Component {
     return(
       <div>
         <h1>About</h1>
+        <SocialLinks />
       </div>
     )
   }

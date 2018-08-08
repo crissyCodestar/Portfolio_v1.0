@@ -6,11 +6,17 @@
   padding: 10px 30px;
 }
 
+/*
+Color Value */
+
+/*
+Primary- Purple */
 .btn.primary {
   color: white;
   background-color: #941588;
 }
 
+/* Gradient- Purple */
 .btn.primary_gradient {
   position: relative;
   color: #fff;
@@ -29,9 +35,29 @@
   background-position: 0 0;
 }
 
+
 .btn.warning {
-  color: black;
+  color: #fff;
   background-color: #e3e25d;
+}
+
+
+.btn.warning_gradient {
+  position: relative;
+  color: #fff;
+  background-image: -webkit-gradient(-30deg, 0 0, 0 100%, from(#edec55), to(#be2509));
+  background-image: -webkit-linear-gradient(-40deg, #f51580, #151a94);
+  background-image: linear-gradient(-40deg, #fbfa5a, #d12303);
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-size: 200% 200px;
+  background-position: -70px -40px;
+  -webkit-transition: all 0.4s linear;
+          transition: all 0.4s linear;
+}
+
+.btn.warning_gradient:hover {
+  background-position: 0 0;
 }
 
 .btn.danger {
@@ -43,6 +69,9 @@
   color: white;
   background-color: #d97c01;
 }
+/*
+Sizes
+*/
 
 .btn.small {
   border: 1px solid #ddd;
@@ -61,6 +90,6 @@
 .btn.large {
   border: 3px solid #ddd;
   font-size: 1.8em;
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px 30px;
 }

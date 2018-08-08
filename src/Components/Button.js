@@ -8,6 +8,7 @@ export const TYPES = {
   DANGER: 'danger',
   SUCCESS: 'success',
   PRIMARY_GRADIENT: 'primary_gradient',
+  WARNING_GRADIENT: 'warning_gradient'
 };
 
 export const SIZES = {

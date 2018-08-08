@@ -1,33 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Link
 } from 'react-router-dom';
-import {Button} from './Button';
+import { Button } from './Button';
 
 const Nav = () =>(
-  <nav className='container'>
-    <ul className='navbar'>
-      <li className='navbar-brand'>
-        <Link to='/'>Home</Link>
-      </li>
-      {" "}
-      <li className='nav-item'>
-        <Link to='/about'> About</Link>
-      </li>
-      {" "}
-      <li className='nav-item'>
-        <Link to='/gallery'> Gallery</Link>
-      </li>
-      {" "}
-      <li className='nav-item'>
-        <Link to='playground'> Playground</Link>
-      </li>
-      {" "}
-      <li className='nav-item'>
-        <Link to='/contact'> Contact</Link>
-      </li>
-    </ul>
-  </nav>
+
+  <div className="pos-f-t">
+<div className="collapse" id="navbarToggleExternalContent">
+  <div className="bg-dark p-4">
+    <h4 className="text-white">Collapsed content</h4>
+    <span className="text-muted">Toggleable via the navbar brand.</span>
+  </div>
+</div>
+<nav className="navbar navbar-dark bg-dark">
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+</nav>
+</div>
+
 )
 
 export default Nav;
