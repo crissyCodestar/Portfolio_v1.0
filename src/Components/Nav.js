@@ -1,13 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Link
-} from 'react-router';
-import {Button} from './Button';
+} from 'react-router-dom';
+import { Button } from './Button';
 
 const Nav = () =>(
-  <div>
-      <Button text='Hello'/>
+
+  <div className="pos-f-t">
+<div className="collapse" id="navbarToggleExternalContent">
+  <div className="bg-dark p-4">
+    <h4 className="text-white">Collapsed content</h4>
+    <span className="text-muted">Toggleable via the navbar brand.</span>
   </div>
+</div>
+<nav className="navbar navbar-dark bg-dark">
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+</nav>
+</div>
+
 )
 
 export default Nav;

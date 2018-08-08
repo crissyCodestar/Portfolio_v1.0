@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router';
-import SocialLinks from '../Components/SocialLinks'
 
-class About extends Component {
+import ContactForm from '../Components/Contact/ContactForm';
+
+class Contact extends Component {
   constructor(){
     super();
     this.state={
@@ -15,11 +16,11 @@ class About extends Component {
   render(){
     return(
       <div>
-        <h1>About</h1>
-        <SocialLinks />
+        <h1>Contact Me</h1>
+        <ContactForm />
       </div>
     )
   }
 }
 
-export default About;
+export default Contact;
