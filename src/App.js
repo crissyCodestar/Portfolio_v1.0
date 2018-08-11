@@ -4,6 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import SocialLinks from './Components/SocialLinks'
 import LandingPage from './Pages/LandingPage';
 import TechPlayground from './Pages/TechPlayground';
 import ArtGallery from './Pages/ArtGallery';
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
         </Switch>
+        <SocialLinks />
       </div>
     );
   }
