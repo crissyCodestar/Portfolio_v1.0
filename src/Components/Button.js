@@ -21,7 +21,7 @@ export const Button = ({type, onClick, text, colorValue, size}) => (
     <button
       type={type}
       onClick={onClick}
-      onClick={onClick}
+    
        className={classNames(
          styles.btn,
          styles[ colorValue || TYPES.PRIMARY ],

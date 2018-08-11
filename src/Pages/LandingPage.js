@@ -5,7 +5,8 @@ import {
 
 import Jumbotron from '../Components/Landing/Jumbotron';
 import Intermission from '../Components/Landing/Intermission';
-
+import About from '../Components/Landing/About';
+import Sample from '../Components/Landing/Sample';
 
 class LandingPage extends Component {
   constructor(){
@@ -22,12 +23,13 @@ class LandingPage extends Component {
           <Jumbotron />
         </div>
         <div>
+          <About />
+        </div>
+        <div>
           <Intermission />
         </div>
         <div>
-          <h5> Some Bullshit about myself should go here or above the Intermission
-              Not sure what to do in the inertmmission as of yet
-          </h5>
+          <Sample />
         </div>
       </div>
     )

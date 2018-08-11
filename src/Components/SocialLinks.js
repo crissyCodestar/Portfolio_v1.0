@@ -6,7 +6,8 @@ import github from '../images/github.png'
 import twitter from '../images/twitter.png'
 
 const SocialLinks = () => (
-  <nav className='nav justify-content-center'>
+
+    <nav className='nav justify-content-center bottom'>
         <Link
         className='nav-link'
         to='https://www.facebook.com/CrystalGrantCodester'><img src={facebook} alt="facebook"/></Link>
@@ -22,8 +23,8 @@ const SocialLinks = () => (
         <Link
         className='nav-link'
         to='https://twitter.com/CrissyCodester'><img src={twitter} alt="twitter"/></Link>
+    </nav>
 
-  </nav>
 )
 
 export default SocialLinks;
