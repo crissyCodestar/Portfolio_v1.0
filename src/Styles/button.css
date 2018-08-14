@@ -3,7 +3,7 @@
   border-radius: 30px;
   font-size: 1.8em;
   font-weight: 600;
-  padding: 10px 30px;
+
 }
 
 /*
@@ -31,7 +31,24 @@ Primary- Purple */
           transition: all 0.4s linear;
 }
 
+.btn.primary_gradient_social {
+  width: 40px;
+  position:relative;
+  background-image: -webkit-gradient(-30deg, 0 0, 0 100%, from(#f51580), to(#151a94));
+  background-image: -webkit-linear-gradient(-30deg, #f51580, #151a94);
+  background-image: linear-gradient(-30deg, #f51580, #151a94);
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-size: 200% 90px;
+  background-position: -40px -30px;
+  -webkit-transition: all 0.4s linear;
+          transition: all 0.4s linear;
+}
+
 .btn.primary_gradient:hover {
+  background-position: 0 0;
+}
+.btn.primary_gradient_social:hover {
   background-position: 0 0;
 }
 

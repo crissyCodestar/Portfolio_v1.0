@@ -1,28 +1,42 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import facebook from '../images/facebook.png'
-import instagram from '../images/instagram.png'
-import github from '../images/github.png'
-import twitter from '../images/twitter.png'
+import {Button} from './Button';
+import facebook from '../images/facebook_wht.png'
+import instagram from '../images/instagram_wht.png'
+import github from '../images/github_wht.png'
+import twitter from '../images/twitter_wht.png'
+
 
 const SocialLinks = () => (
 
     <nav className='nav justify-content-center bottom'>
         <Link
         className='nav-link'
-        to='https://www.facebook.com/CrystalGrantCodester'><img src={facebook} alt="facebook"/></Link>
+        target='blank'
+        to={'//www.facebook.com/CrystalGrantCodester'}>
+          <Button colorValue='primary_gradient_social' icon={<img src={facebook} alt="facebook"/>}/>
+        </Link>
 
         <Link
         className='nav-link'
-        to='https://www.instagram.com/crissy_love82/'><img src={instagram} alt="instagram"/></Link>
+        target='blank'
+        to='//www.instagram.com/crissy_love82/'>
+          <Button colorValue='primary_gradient_social' icon={<img src={instagram} alt="instagram"/>}/>
+        </Link>
 
         <Link
         className='nav-link'
-        to='https://github.com/crissygrant82'><img src={github} alt="github"/></Link>
+        target='blank'
+        to='//github.com/crissygrant82'>
+          <Button colorValue='primary_gradient_social' icon={<img src={github} alt="github"/>}/>
+        </Link>
 
         <Link
         className='nav-link'
-        to='https://twitter.com/CrissyCodester'><img src={twitter} alt="twitter"/></Link>
+        target='blank'
+        to='//twitter.com/CrissyCodester'>
+          <Button colorValue='primary_gradient_social' icon={<img src={twitter} alt="twitter"/>}/>
+        </Link>
     </nav>
 
 )
