@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router';
-
+import SocialLinks from '../Components/SocialLinks'
 import ContactForm from '../Components/Contact/ContactForm';
 
 class Contact extends Component {
@@ -17,7 +17,10 @@ class Contact extends Component {
     return(
       <div>
         <h1>Contact Me</h1>
-        <ContactForm />
+        <SocialLinks />
+        <div className='col-12'>
+          <ContactForm />
+        </div>
       </div>
     )
   }
